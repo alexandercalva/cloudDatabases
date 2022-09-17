@@ -9,3 +9,7 @@ List of websites useful when working in the suggested environment:
 * ### [Firestore Tutorial (official site)](https://firebase.google.com/docs/firestore)
 * ### [Firebase Console (official site)](https://firebase.google.com/docs/firestore)
 * ### [Google Authentication—Creating a Service Account (official site)](https://cloud.google.com/docs/authentication/client-libraries)
+
+### Video presentation
+[Create repository - Hello World](https://youtu.be/48ZiV0Nn0Sg)
+
