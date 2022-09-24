@@ -11,7 +11,7 @@ datos = {
     'Phone': '0983545654',
     'Mail': 'prueba@gmail.com',
     'Address': 'Urb. Limonar',
-    'Job': 'Carpinter'
+    'Job': 'Carpinter' 
 }
 
 # Add registers to Database(post)
