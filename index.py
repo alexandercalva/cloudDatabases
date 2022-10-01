@@ -1,56 +1,66 @@
 #from typing_extensions import Self
 from firebase import firebase
+import random
+import bcrypt 
+import sys
 
 firebase = firebase.FirebaseApplication("https://fir-python-ce049-default-rtdb.firebaseio.com/",None)
 
 #class
 
 class persona:
-    def __init__(self, name, lastname, phone, mail, password, address, job):
-        self.name = name
-        self.lastname = lastname
-        self.phone = phone
-        self.mail = mail
-        self.password = password
-        self.address = address
-        self.job = job
-        
-
-    def __str__(self):
-        return 'Name: {}\nLastname: {}\nPhone: {}\nMail: {}\naddress: {}\nJob: {}'.format(self.name, self.lastname, self.phone, self.mail, self.address, self.job)
-    
+           
+    # Enter information in each field in the database
     def IntroInfo(self):
-        self.name = input("Name: ")
-        self.lastname = input("Lastname: ")
-        self.phone = input("Phone: ")
-        self.mail = input("Mail: ")
-        self.password = input("Password: ")
-        self.address = input("Address: ")
-        self.Job = input("Job: ")
-
+        #idUser = input("Id: ")
+        name = input("Name: ")
+        lastname = input("Lastname: ")
+        phone = input("Phone: ")
+        mail = input("Mail: ")
+        password = input("Password: ")
+        address = input("Address: ")
+        job = input("Job: ")
+        experience = input("Experience: ")
+        
+        # Change the password in safe mode.
+        passwd = password.encode('utf-8')
+        salt = bcrypt.gensalt()
+        hashed = bcrypt.hashpw(passwd, salt)
+        encoding = sys.getdefaultencoding()
+       
+        # Store all information in datos object
         datos = {
-            'Name' : self.name,
-            'LastName': self.lastname,
-            'Phone': self.phone,
-            'Mail': self.mail,
-            'Address': self.address,
-            'Job': self.job,
-            'Passsword': self.password 
+            'Id' : random.randint(1,10000),
+            'Name' : name,
+            'LastName': lastname,
+            'Phone': phone,
+            'Mail': mail,
+            'Address': address,
+            'Job': job,
+            'Passsword': hashed.decode(encoding),
+            'Experience': experience
         }
-        return datos
+        ansPost = firebase.post('/tutorial_firebase/data_post',datos)
+        #return datos
+    
+    # Read data from firebase
+    def ShowData(self):
+        ansGet = firebase.get('/tutorial_firebase/data_post', '')
+        print(ansGet)
 
-personaF = persona("Alex", "Calva", 983880592, "correo@gmail.com", "hola","urba", "developer")
-ansPost = firebase.post('/tutorial_firebase/data_post',personaF.IntroInfo())
-#print(personaF)
-# Add registers to Database(post)
+    #Edit data from firebase
+    def EditData(self):
+        firebase.put('/tutorial_firebase/data_post/-NCkPLmQatOI0hdefvLh', 'id', '2')   
+
+# Instance of persona class
+personaFirestore = persona()
+
+# Introduce information
+personaFirestore.IntroInfo()
+# Show all information
+personaFirestore.ShowData()
 
 
-# Read data from firebase
-ansGet = firebase.get('/tutorial_firebase/data_post', '')
-print(ansGet)
-
-#Edit data from firebase
-#firebase.put('/tutorial_firebase/data_post/-NCkPLmQatOI0hdefvLh', 'id', '2')
 
 # Delete data from firebase
 #firebase.delete('/tutorial_firebase/data_post', '-NCkQKqjEs7SOWm3OSsx')
