@@ -1,8 +1,8 @@
 # Overview
 
-{Program to perform a CRUD in Firebase Firestore using the Python programming language.}
+Program to perform a CRUD in Firebase Firestore using the Python programming language.
 
-{Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
+First the connection between Firebase and Python was created. For this it was necessary to create an account in Firebase with a Gmail email. Next, a real-time database was created in Firestore. This entire process was free. Second, a program was developed to register users with 9 fields, which were name, lastname, phone, mail, address, job, password, and experience. Third, a random id was created for each user to avoid duplication in this field. To achieve all this, necessary methods and libraries were used. Finally, a menu was created where the user can choose which option they want to do between register, search, update, or delete within the database. One of the main challenges was encrypting the password entered in the registry. It was achieved using the library called bscrypt.
 
 {Describe your purpose for writing this software.}
 
