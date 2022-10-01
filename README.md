@@ -52,8 +52,7 @@ List of websites that I found helpful in this project
 * [Geeksforgeeks](https://www.geeksforgeeks.org/hashing-passwords-in-python-with-bcrypt/)
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Improve password entry for a user.
+* Perform a specific query in the database
+* Perform an authentication from console in Python
 
