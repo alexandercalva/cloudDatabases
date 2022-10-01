@@ -1,15 +1,37 @@
 # Overview
-Create a repository and install all tools for the next projects in the field of software engineering. 
+
+{Program to perform a CRUD in Firebase Firestore using the Python programming language.}
+
+{Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
+
+{Describe your purpose for writing this software.}
+
+{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
+
+[Software Demo Video](http://youtube.link.goes.here)
+
+# Cloud Database
+
+{Describe the cloud database you are using.}
+
+{Describe the structure of the database that you created.}
+
 # Development Environment
-Here the entire development environment used for a new project will be implemented.
+
+{Describe the tools that you used to develop the software}
+
+{Describe the programming language that you used and any libraries.}
 
 # Useful Websites
-Websites used in the new project.
 
+{Make a list of websites that you found helpful in this project}
+* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](http://url.link.goes.here)
 
-[Software Demo Video](https://youtu.be/48ZiV0Nn0Sg)
+# Future Work
 
-
-
-
+{Make a list of things that you need to fix, improve, and add in the future.}
+* Item 1
+* Item 2
+* Item 3
 
