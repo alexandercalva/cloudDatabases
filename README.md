@@ -18,6 +18,7 @@ I used variables within a class with an object as main structure.
 
 
 datos = {
+            
             'Id' : random.randint(1,10000),
             'Name' : name,
             'LastName': lastname,
@@ -27,6 +28,7 @@ datos = {
             'Job': job,
             'Passsword': hashed.decode(encoding),
             'Experience': experience
+            
         }
 
 # Development Environment
