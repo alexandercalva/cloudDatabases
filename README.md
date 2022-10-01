@@ -43,8 +43,8 @@ Libraries used:
 # Useful Websites
 
 List of websites that I found helpful in this project
-* [Stackoverflow - firebase](http://url.link.goes.here](https://stackoverflow.com/questions/52133031/receiving-async-error-when-trying-to-import-the-firebase-package)
-* [Stackoverflow - github ](http://url.link.goes.here](https://stackoverflow.com/questions/51817479/vscode-please-clean-your-repository-working-tree-before-checkout)
+* [Stackoverflow - firebase](https://stackoverflow.com/questions/52133031/receiving-async-error-when-trying-to-import-the-firebase-package)
+* [Stackoverflow - github ](https://stackoverflow.com/questions/51817479/vscode-please-clean-your-repository-working-tree-before-checkout)
 * [Python diario](https://pythondiario.com/2017/09/algoritmos-hash-criptografia-con-python.html?amp=1)
 * [Geeksforgeeks](https://www.geeksforgeeks.org/hashing-passwords-in-python-with-bcrypt/)
 # Future Work
