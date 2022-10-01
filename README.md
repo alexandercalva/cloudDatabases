@@ -16,6 +16,7 @@ Firebase in Realtime Database with firestore
 
 I used variables within a class with an object as main structure.
 
+
 datos = {
             'Id' : random.randint(1,10000),
             'Name' : name,
